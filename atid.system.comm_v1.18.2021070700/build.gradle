@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('atid.system.comm_v1.18.2021070700.aar'))

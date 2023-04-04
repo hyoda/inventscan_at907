@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AT907_InventoryScan.iml" filepath="$PROJECT_DIR$/.idea/modules/AT907_InventoryScan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atid.dev.rfid_v2.31.2021070700/AT907_InventoryScan.atid.dev.rfid_v2.31.2021070700.iml" filepath="$PROJECT_DIR$/.idea/modules/atid.dev.rfid_v2.31.2021070700/AT907_InventoryScan.atid.dev.rfid_v2.31.2021070700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atid.system.comm_v1.18.2021070700/AT907_InventoryScan.atid.system.comm_v1.18.2021070700.iml" filepath="$PROJECT_DIR$/.idea/modules/atid.system.comm_v1.18.2021070700/AT907_InventoryScan.atid.system.comm_v1.18.2021070700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atid.system.ctrl_v1.20.2021070700/AT907_InventoryScan.atid.system.ctrl_v1.20.2021070700.iml" filepath="$PROJECT_DIR$/.idea/modules/atid.system.ctrl_v1.20.2021070700/AT907_InventoryScan.atid.system.ctrl_v1.20.2021070700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atid.system.device_v1.16.2021070700/AT907_InventoryScan.atid.system.device_v1.16.2021070700.iml" filepath="$PROJECT_DIR$/.idea/modules/atid.system.device_v1.16.2021070700/AT907_InventoryScan.atid.system.device_v1.16.2021070700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atid.system.jcomm_v1.22.2021070700/AT907_InventoryScan.atid.system.jcomm_v1.22.2021070700.iml" filepath="$PROJECT_DIR$/.idea/modules/atid.system.jcomm_v1.22.2021070700/AT907_InventoryScan.atid.system.jcomm_v1.22.2021070700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atid.util_v1.18.2021070700/AT907_InventoryScan.atid.util_v1.18.2021070700.iml" filepath="$PROJECT_DIR$/.idea/modules/atid.util_v1.18.2021070700/AT907_InventoryScan.atid.util_v1.18.2021070700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.iml" filepath="$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.main.iml" filepath="$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/invenscan/AT907_InventoryScan.invenscan.unitTest.iml" />
+    </modules>
+  </component>
+</project>

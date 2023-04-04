@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+package 명이 barcode와 같아서 빌드 시 Multiple dex files define com/atid/lib/dev/BuildConfig 발생함
+package 명을 com.atid.lib.dev 에서 com.atid.lib.dev.rfid 로 변경함.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atid.lib.dev.rfid"
+    android:versionCode="2021070700"
+    android:versionName="2.31.2021070700" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="29" />
+
+</manifest>

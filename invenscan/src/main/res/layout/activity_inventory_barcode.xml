@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin" >
+
+	<ListView
+		android:id="@+id/listview_barcode"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_margin="5dp"
+		android:layout_weight="1"
+		android:background="@drawable/border"
+		/>
+
+	<CheckBox
+		android:id="@+id/checkbox_auto"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:text="@string/auto_scan"
+		android:textStyle="bold" />
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/tips_date"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="date"/>
+
+		<TextView
+			android:id="@+id/tips_battery"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+
+		<!-- Buttons -->
+		<TableLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<TableRow >
+
+				<Button android:id="@+id/button_test"
+					style="@style/Widget.View.Button"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Scan"
+					android:background="@drawable/button_corners"
+					android:textColor="#ffffff"
+					/>
+
+
+				<Switch
+					android:id="@+id/switch1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="BARCODE"
+					android:visibility="gone"
+					/>
+
+
+			</TableRow>
+
+			<View android:layout_width="match_parent" android:layout_height="5dp" />
+
+			<TableRow >
+
+				<Button android:id="@+id/button_stop"
+					style="@style/Widget.View.Button"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Stop"
+					android:background="@drawable/button_corners"
+					android:textColor="#ffffff"
+					/>
+				<View android:layout_width="5dp" android:layout_height="5dp" />
+
+				<Button android:id="@+id/button_clear"
+					style="@style/Widget.View.Button"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="18sp"
+					android:text="Clear"
+					android:background="@drawable/button_corners"
+					android:textColor="#ffffff"
+					/>
+
+			</TableRow>
+
+		</TableLayout>
+
+
+		<!--		<Button-->
+<!--			android:id="@+id/button_test"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_margin="10dp"-->
+<!--			android:layout_weight="1"-->
+<!--			android:text="SCAN"-->
+<!--			android:background="@drawable/button_corners"-->
+<!--			android:textColor="#ffffff"-->
+<!--			/>-->
+
+<!--		<Button-->
+<!--			android:id="@+id/button_stop"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_margin="10dp"-->
+<!--			android:layout_weight="1"-->
+<!--			android:text="STOP"-->
+<!--			android:background="@drawable/button_corners"-->
+<!--			android:textColor="#ffffff"-->
+<!--			/>-->
+
+
+<!--		<Button-->
+<!--			android:id="@+id/button_clear"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_margin="10dp"-->
+<!--			android:layout_weight="1"-->
+<!--			android:text="@string/clear"-->
+<!--			android:background="@drawable/button_corners"-->
+<!--			android:textColor="#ffffff"-->
+<!--			/>-->
+	</LinearLayout>
+
+</LinearLayout>

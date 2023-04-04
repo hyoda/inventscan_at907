@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+
+
+    <ListView
+        android:id="@+id/tag_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/border" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <!-- Inventory Options -->
+
+    <TextView
+        style="@style/Widget.View.LabelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/border" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="3dp" >
+
+            <!-- Inventory Option -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:visibility="gone"
+                >
+
+                <!-- Display PC Value -->
+
+                <CheckBox
+                    style="@style/Widget.View.LabelTextView"
+                    android:id="@+id/display_pc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/display_pc" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <!-- Continue Mode -->
+
+                <CheckBox
+                    style="@style/Widget.View.LabelTextView"
+                    android:id="@+id/continue_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/continuous_mode" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:visibility="gone"
+                >
+
+                <!-- Display RSSI Value -->
+
+                <CheckBox
+                    style="@style/Widget.View.LabelTextView"
+                    android:id="@+id/report_rssi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/report_rssi"
+
+                    />
+
+                <CheckBox
+                    style="@style/Widget.View.LabelTextView"
+                    android:id="@+id/cw_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:text="@string/cw_on" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:visibility="gone"
+                />
+
+            <!-- Power Gain -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+
+                >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/power_gain" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    android:id="@+id/power_gain"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:visibility="gone"
+                />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+
+                >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="BARCODE VALUE : " />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    android:id="@+id/txtBarcode"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp"
+
+                >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="BARCODE" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Operation Time -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/operation_time" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    android:id="@+id/operation_time"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color"
+                android:visibility="gone"
+                />
+
+            <!-- Tag Type -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/Widget.View.LabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/tag_type" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="3dp" />
+
+                <TextView
+                    android:id="@+id/tag_type"
+                    style="@style/Widget.View.ValueTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/report_rssi_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <!-- Controls -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+
+        >
+
+        <!-- Tag Count -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Total"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/label_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tag_count"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/label_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                >
+
+
+
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/Widget.View.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="@string/action_clear"
+                    android:background="@drawable/button_corners"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+
+
+                <!--                -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="3dp" />
+
+        <!-- Buttons -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                >
+
+
+
+
+                <Button
+                    android:id="@+id/action"
+                    style="@style/Widget.View.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:text="@string/action_inventory"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_corners"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                >
+
+
+
+                <Button
+                    android:id="@+id/save"
+                    style="@style/Widget.View.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="@string/action_save"
+                    android:background="@drawable/button_corners"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+
+                <Button
+                    android:id="@+id/mask"
+		         	style="@style/Widget.View.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/action_mask"
+                    android:visibility="gone"
+                    />
+<!--                -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
